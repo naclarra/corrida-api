@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const { UnauthorizedError, ForbiddenError } = require('../utils/errors');
 
 /**
- * Middleware factory para autenticação JWT (Bônus A).
+ * Middleware factory para autenticação JWT .
  */
 function authMiddleware(jwtSecret) {
   return (req, _res, next) => {
@@ -22,7 +22,7 @@ function authMiddleware(jwtSecret) {
 }
 
 /**
- * Middleware factory para autorização por perfis (Bônus B - RBAC).
+ * Middleware factory para autorização por perfis .
  *
  * SOLID — Open/Closed:
  * Para adicionar um novo perfil basta passar mais um argumento; não há
